@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_margin="17dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewId"
+        app:cardCornerRadius="6dp"
+       app:cardBackgroundColor="@color/colorDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:src="@drawable/placeholder_image"
+            android:id="@+id/singleQuizImageId"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/imageCoverid"
+        android:translationZ="10dp"
+        android:background="@drawable/image_cover"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </View>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/singleQuizTitleId"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+    android:text="Quiz Title"
+    android:textColor="@color/colorPrimary"
+    android:textSize="22dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/singleQuizDescriptionId"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Quiz Description"
+        android:textColor="@color/colorLightText"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/singleQuizDifficultyId"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Quiz Difficulty"
+        android:textColor="@color/colorLightText"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/singleQuizButtonId"
+        android:text="See Quiz"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

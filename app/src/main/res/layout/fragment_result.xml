@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ResultFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="Result"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+        </ProgressBar>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="100%"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Correct Answer"
+            android:id="@+id/resultCorrectAnswerId"
+            android:textColor="@color/colorLightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="N/A"
+            android:layout_alignParentRight="true"
+            android:id="@+id/resultCorrectAnswerValueId"
+            android:textColor="@color/colorLightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="15dp"
+            android:text="Wrong Answer"
+            android:id="@+id/resultWrongAnswerId"
+            android:layout_below="@id/resultCorrectAnswerId"
+            android:textColor="@color/colorLightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="N/A"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/resultWrongAnswerValueId"
+            android:layout_below="@id/resultCorrectAnswerValueId"
+            android:textColor="@color/colorLightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Question Missed"
+            android:layout_marginTop="15dp"
+            android:id="@+id/resultMissQuestionId"
+            android:layout_below="@id/resultWrongAnswerId"
+            android:textColor="@color/colorLightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="N/A"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/resultMissQuestionValueId"
+            android:layout_below="@id/resultWrongAnswerValueId"
+            android:textColor="@color/colorLightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="15dp"
+        android:text="Go to Home"
+        android:textAllCaps="false"
+        android:background="@drawable/details_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

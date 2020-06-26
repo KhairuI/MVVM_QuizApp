@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".view.fragment.ListFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="Quizzes"
+        android:id="@+id/quizId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/quizId"
+        android:id="@+id/quizRecycleId"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/single_list"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/listProgressBarId"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </androidx.core.widget.ContentLoadingProgressBar>
+
+
+</RelativeLayout>
